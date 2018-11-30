@@ -1,0 +1,23 @@
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
+import { ZluxGridModule } from '@zlux/grid';
+import { ZluxPopupWindowModule, ZluxButtonModule } from '@zlux/widgets';
+import { UserBrowserComponent } from './userbrowser-component';
+
+@NgModule({
+  imports: [
+    CommonModule,
+    FormsModule,
+    HttpModule,
+    ReactiveFormsModule,
+    ZluxButtonModule,
+    ZluxGridModule,
+    ZluxPopupWindowModule
+  ],
+  declarations: [UserBrowserComponent],
+  exports: [UserBrowserComponent],
+  entryComponents: [UserBrowserComponent]
+})
+export class UserBrowserModule {}
